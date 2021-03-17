@@ -1,0 +1,64 @@
+footer{
+    padding-top: 80px;
+    box-shadow: inset 0px 0px 1000px rgba(0, 0, 0, 0.5);
+    .title{
+        h4{
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+    .links{
+        input{
+            background:transparent;
+            border: 1px solid $pColor;
+            padding: 5px 10px;
+            width: 100%;
+            color: $pColor;
+            &::placeholder{
+                color: $pColor;
+                font-size: 14px;
+            }
+        }
+        >a{
+            color: $pink;
+        }
+        li{
+            list-style:none;
+           a{
+                color: $pColor;
+                font-size: 15px;
+                font-weight: 600;
+                &:hover{
+                    text-decoration: none;
+                }
+                small{
+                    font-size: 15px;
+                }
+                big{
+                    font-size: 16px;
+                    color: #fff;
+                }
+           }
+
+        }
+    }
+    .footer{
+        padding: 40px 0;
+        background-color: $main;
+        opacity: .7;
+        color: $pColor;
+        border-top: 2px solid $pColor;
+        button{
+            background-color: transparent;
+            border:none;
+            color: #fff;
+            transition: $transition;
+            &:hover{
+                color: $yellow;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.PagesButtons {
+    width: 250px;
+    button{
+        background-color: transparent;
+        color: $pColor;
+        border: 1px solid $pColor;
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+        transition: $transition;
+        &:focus{
+            outline: none;
+        }
+        &.disable{
+            pointer-events: none;
+            opacity: .5; 
+        }
+        &.active{
+            color: $yellow;
+            border-color: $yellow;
+        }
+        &:hover{
+            color: $yellow;
+            border-color: $yellow;
+        }
+    }
+    &.light {
+        button{
+            &.active{
+                color: $pink;
+                border-color: $pink;
+            }
+            &:hover{
+                color: $pink;
+                border-color: $pink;
+            }
+        }
+    }
+}

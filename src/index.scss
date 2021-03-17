@@ -1,0 +1,30 @@
+@import "./componentsScss/vars/Vars.scss";
+@import "./componentsScss/custom/Custom.scss";
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Dosis", sans-serif;
+}
+@import "./componentsScss/layout/Header.scss";
+@import "./componentsScss/layout/Navbar.scss";
+@import "./componentsScss/layout/SearchBar.scss";
+@import "./componentsScss//pages/LandingPage.scss";
+@import "./componentsScss/parts/Spinner.scss";
+@import "./componentsScss/pages/SignUp.scss";
+@import "./componentsScss/renderMovies/MovieCard.scss";
+@import "./componentsScss/pages/Home.scss";
+@import "./componentsScss/renderMovies/MovieCardLoading.scss";
+
+@import "./componentsScss/layout/Footer.scss";
+@import "./componentsScss/parts/GetMorePages.scss";
+@import "./componentsScss/renderMovies/RenderMoviesHeading.scss";
+@import "./componentsScss/pages/News.scss";
+@import "./componentsScss/pages/Movie.scss";

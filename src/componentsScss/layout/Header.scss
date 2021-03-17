@@ -1,0 +1,27 @@
+header{
+    background-repeat:repeat-y;
+    box-shadow:inset  0px 0px 1000px rgba(0,0,0,.5); 
+    &.full{
+        height: 800px;
+        padding: 100px 0 80px 0;
+        .movieCard{
+            &:hover .info h4{
+                color: $yellow !important;
+            }
+            .info{
+                h4{
+                    color: #fff !important;
+                }
+                >div{
+                    big{
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+    }
+    &.half{
+        padding: 100px 0 40px 0;
+        height:400px
+    }
+}

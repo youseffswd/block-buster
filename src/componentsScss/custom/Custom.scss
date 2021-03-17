@@ -1,0 +1,77 @@
+
+
+$theme-colors: (
+    "main":$main,
+    "pink":$pink,
+    "nav":$nav,
+    "pColor":$pColor,
+    "dark":$main,
+    "light":$main_light,
+    "dark-light":$lightMain,
+    "light-light":$lightMain_light
+
+);
+.flex-content-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backg-main{
+    background-color: $main;
+}
+.rela{
+    position: relative;
+}
+.search-icon{
+    color: $pColor;
+    position: absolute;
+    right: 5px;
+    font-size: 15px;
+    top: 50%;
+    transform: translateY(-60%);
+    cursor: pointer;
+    margin: 0;
+    z-index:1000;
+    @media(min-width:$md){
+        font-size: 25px;
+    }
+}
+.abs-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-capitalize{
+    text-transform: capitalize;
+}
+
+.section-padding{
+    padding: $section-padding;
+}
+.button-pink{
+    background-color: $pink;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 25px;
+    border: 2px solid $pink;
+    transition: 0.2s all linear;
+    &:hover{
+        background-color: rgba($pink,0) !important;
+        text-decoration: none;
+        color: $pink !important;
+    }
+    &:focus{
+        border: 2px solid $pink;
+    }
+}
+a{
+    text-decoration: none;
+}
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";

@@ -1,0 +1,95 @@
+.singleMovieOrTv{
+    .rate{
+            
+        span{
+            color: #F5B50A;
+            font-size: 30px;
+            margin-right: 3px;
+            display: contents;
+        }
+        big{
+            color: #fff;
+            font-weight: 600;
+            font-size: 21px;
+        }
+        small{
+            color: $pColor;
+            font-weight: 400;
+            font-size:18px;
+        }
+    }
+    .singleMovieCard{
+        .img {
+            img{
+                border-radius: 10px;
+            }
+        }
+        .content{
+            border: 3px solid #0c1c2c;
+            perspective: 500px;
+            button{
+                width: 100%;
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 5px;
+                &:hover{
+                    animation: rotating .4s ease-in-out;
+                }
+                &:hover span:last-of-type{
+                    opacity: 0;
+                }
+                span{
+                    transition: .4s all ease-in-out;
+                }
+                span:first-of-type{
+                    font-size: 18px;
+                    transform: translate(-5px, -1.5px);
+                    display: inline-block;
+                }
+                &:first-of-type{
+                    background-color: $pink;
+                    color: #fff;
+                    &:hover span:first-of-type{
+                        transform: translate(46px,-1.5px);
+                        
+                    }
+                }
+                &:last-of-type{
+                    background-color: $yellow;
+                    color: $main;
+                    &:hover span:first-of-type{
+                        transform: translate(36px,-1.5px);
+                        
+                    }
+                }
+            }
+        }
+    }
+    .contentInfo{
+        &.light .title{
+            color: $main !important;
+        }
+        .companies{
+            .img{
+                width: 80px;
+            }
+            h4.name{
+                color: #4280bf;
+                font-weight: 600;
+                font-size: 17px;
+            }
+        }
+    }
+}
+@keyframes rotating {
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(180deg);
+    }
+    
+    
+}

@@ -1,0 +1,59 @@
+.spinner{
+    height: 100vh;
+    padding-top: 15vh;
+    .content{
+        color: $pColor;
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 1.2px;
+    }
+    .loaders{
+        width: 80px;
+        height: 80px;
+        margin: 20vh auto 0 auto !important;
+
+        span{
+            display: block;
+            border:5px solid;
+            
+            &.small{
+                width:35px;
+                height: 35px;
+                border-right-color:$pink;
+                border-left-color:$pink;
+                border-bottom-color:$pink;
+                border-top-color:transparent;
+                animation: routing1 1s linear  infinite;
+            }
+            &.big{
+                width: 80px;
+                height: 80px;
+                border-right-color:$yellow;
+                border-bottom-color:$yellow;
+                border-left-color:$yellow;
+                border-top-color:transparent;
+                transform:translate(-50%,-50%) rotate(-45deg);
+                animation: routing2 3s linear  infinite;
+            }
+        }
+    }
+}
+@keyframes routing1 {
+    0%{
+        transform:translate(-50%,-50%) rotate(0);
+    }
+    100%{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+}
+@keyframes routing2 {
+    0%{
+        transform:translate(-50%,-50%) rotate(-45deg);
+    }
+    50%{
+        transform:translate(-50%,-50%) rotate(157.5deg);
+    }
+    100%{
+        transform:translate(-50%,-50%) rotate(315deg);
+    }
+}

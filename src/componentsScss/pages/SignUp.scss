@@ -1,0 +1,54 @@
+.signup,.signin{
+    form {
+        border-radius: 10px;
+        padding: 15px;
+        height: auto;
+        width: 90%;
+        background: #fff;
+        margin: auto;
+        transform: translateY(100px);
+        @media (min-width:$sm) {
+            padding:25px;
+        }
+        @media (min-width:$md) {
+            padding:35px 30;
+            width: 70%;
+        }
+        @media (min-width:$lg) {
+            padding:40px 30px;
+            width: 55%;
+        }
+        @media (min-width:$xl) {
+            padding:45px 35px;
+            width: 45%;
+        }
+        .selectBox{
+            border: 2px solid $pink;
+            border-radius: 5px;
+            padding: 5px 10px;
+            color: #fff;
+            background: $pink;
+            &:focus{
+                border:none ;
+                outline: none;
+                box-shadow:0 0 0 0.2rem rgba($pink, 0.5)
+            }
+        }
+        .noDanger{
+            display:none;
+        }
+        input{
+            &:focus{
+                border-color:$pink;
+                box-shadow:0 0 0 0.2rem rgba($pink, 0.25)
+            }
+        }
+        small{
+            font-size:100%;
+            a{
+                color:$pink;
+                font-weight: bold;
+            }
+        }    
+    }
+}

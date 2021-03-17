@@ -1,0 +1,20 @@
+.type{
+    list-style: none;
+    li{
+        font-weight: 600;
+        cursor: pointer;
+        transition: $transition;
+        @media (min-width:$md){
+            &:not(:first-of-type){
+                margin: 0 10px;
+            }
+            &:first-of-type{
+                margin-right: 10px;
+            }
+        }
+    }
+    &.light li:hover{ color: $pink !important; }
+    &.dark li:hover{ color: $yellow !important; }
+    &.light .active{ color: $pink !important; }
+    &.dark .active{ color: $yellow !important; }
+}

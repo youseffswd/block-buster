@@ -1,0 +1,79 @@
+.movieCard{
+    display: block;
+    text-align: center;
+    &:hover{
+        text-decoration: none;
+    }
+    .img{
+        img{
+            border-radius: 10px;
+        }
+        >div{
+            width: auto;
+            height: 300px;
+            background-color: rgba(#000,.2);
+            line-height: 300px;
+            color: #fff;
+            border-radius: 10px;
+        }
+        
+    }
+    .info{
+        &.light {
+            h4{
+                color: $main;
+            }
+            >div{
+                big{
+                    color: $main;
+                }
+                small{
+                    font-weight: bold;
+                }
+            }
+        }
+        h4{
+            transition: $transition;
+            font-weight: bold;
+            font-size: 16px;
+            word-wrap: break-word;
+            color: #fff;
+            @media (min-width:$sm){
+                font-size:16px
+            }
+            @media (min-width:$md){
+                font-size:18px
+            }
+            @media (min-width:$lg){
+                font-size:20px
+            }
+            @media (min-width:$xl){
+                font-size:22px
+            }
+        }
+        >div{
+            
+            span{
+                color: #F5B50A;
+                font-size: 25px;
+                margin-right: 3px;
+                display: contents;
+            }
+            big{
+                color: #fff;
+                font-weight: 600;
+            }
+            small{
+                color: $pColor;
+                font-weight: 400;
+                font-size:14px;
+            }
+        }
+    }
+    &:hover .info h4{
+        color: $yellow;
+    }
+    &:hover .info.light h4{
+        color: $pink;
+    }
+}
